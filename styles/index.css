@@ -2,22 +2,17 @@
 
 .card-wrapper {
   background-color: var(--white);
-  max-width: 384px;
-  border-radius: 20px;
+  max-width: 20.4375rem;
+  border-radius: 1.25rem;
   padding: var(--sp-24);
   border: 1px solid var(--gray-950);
-  box-shadow: 8px 8px;
-  @media screen and (max-width: 30rem) {
-    max-width: 327px;
-    margin-inline: var(--sp-24);
-  }
+  box-shadow: 8px 8px black;
+  margin-inline: var(--sp-24);
 }
 
 .card-img {
   border-radius: 0.625rem;
-  @media screen and (max-width: 30rem) {
-    max-width: 279px;
-  }
+  max-width: 17.4375rem;
 }
 
 .card-content {
@@ -25,45 +20,33 @@
 }
 
 .card-content * {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .card-content .category {
   padding: var(--sp-4) var(--sp-12);
   background-color: var(--yellow);
   display: inline-block;
-  border-radius: 4px;
-  font-size: var(--fs-14);
+  border-radius: 0.25rem;
+  font-size: var(--fs-12);
   font-weight: var(--fw-extra-bold);
-  @media screen and (max-width: 30rem) {
-    font-size: var(--fs-12);
-  }
 }
 
 .card-content .publish-date {
-  font-size: var(--fs-14);
+  font-size: var(--fs-12);
   font-weight: var(--fw-medium);
-  @media screen and (max-width: 30rem) {
-    font-size: var(--fs-12);
-  }
 }
 
 .card-content .title {
-  font-size: var(--fs-24);
+  font-size: var(--fs-20);
   font-weight: var(--fw-extra-bold);
-  @media screen and (max-width: 30rem) {
-    font-size: var(--fs-20);
-  }
 }
 
 .card-content .description {
-  font-size: var(--fs-16);
+  font-size: var(--fs-14);
   font-weight: var(--fw-medium);
   color: var(--gray-500);
   margin-bottom: 0;
-  @media screen and (max-width: 30rem) {
-    font-size: var(--fs-14);
-  }
 }
 
 .author-info .author {
@@ -75,4 +58,32 @@
 .author-info .author .author-name {
   font-size: var(--fs-14);
   font-weight: var(--fw-extra-bold);
+}
+
+/* === Desktop (30rem+ = 480px+) === */
+@media screen and (min-width: 30rem) {
+  .card-wrapper {
+    max-width: 24rem;
+    margin-inline: 0;
+  }
+
+  .card-img {
+    max-width: 100%;
+  }
+
+  .card-content .category {
+    font-size: var(--fs-14);
+  }
+
+  .card-content .publish-date {
+    font-size: var(--fs-14);
+  }
+
+  .card-content .title {
+    font-size: var(--fs-24);
+  }
+
+  .card-content .description {
+    font-size: var(--fs-16);
+  }
 }

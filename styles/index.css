@@ -7,10 +7,17 @@
   padding: var(--sp-24);
   border: 1px solid var(--gray-950);
   box-shadow: 8px 8px;
+  @media screen and (max-width: 30rem) {
+    max-width: 327px;
+    margin-inline: var(--sp-24);
+  }
 }
 
 .card-img {
   border-radius: 0.625rem;
+  @media screen and (max-width: 30rem) {
+    max-width: 279px;
+  }
 }
 
 .card-content {
@@ -28,16 +35,25 @@
   border-radius: 4px;
   font-size: var(--fs-14);
   font-weight: var(--fw-extra-bold);
+  @media screen and (max-width: 30rem) {
+    font-size: var(--fs-12);
+  }
 }
 
 .card-content .publish-date {
   font-size: var(--fs-14);
   font-weight: var(--fw-medium);
+  @media screen and (max-width: 30rem) {
+    font-size: var(--fs-12);
+  }
 }
 
 .card-content .title {
   font-size: var(--fs-24);
   font-weight: var(--fw-extra-bold);
+  @media screen and (max-width: 30rem) {
+    font-size: var(--fs-20);
+  }
 }
 
 .card-content .description {
@@ -45,6 +61,9 @@
   font-weight: var(--fw-medium);
   color: var(--gray-500);
   margin-bottom: 0;
+  @media screen and (max-width: 30rem) {
+    font-size: var(--fs-14);
+  }
 }
 
 .author-info .author {

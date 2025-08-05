@@ -1,0 +1,59 @@
+@import url("./base.css");
+
+.card-wrapper {
+  background-color: var(--white);
+  max-width: 384px;
+  border-radius: 20px;
+  padding: var(--sp-24);
+  border: 1px solid var(--gray-950);
+  box-shadow: 8px 8px;
+}
+
+.card-img {
+  border-radius: 0.625rem;
+}
+
+.card-content {
+  margin-block: var(--sp-24);
+}
+
+.card-content * {
+  margin-bottom: 12px;
+}
+
+.card-content .category {
+  padding: var(--sp-4) var(--sp-12);
+  background-color: var(--yellow);
+  display: inline-block;
+  border-radius: 4px;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-extra-bold);
+}
+
+.card-content .publish-date {
+  font-size: var(--fs-14);
+  font-weight: var(--fw-medium);
+}
+
+.card-content .title {
+  font-size: var(--fs-24);
+  font-weight: var(--fw-extra-bold);
+}
+
+.card-content .description {
+  font-size: var(--fs-16);
+  font-weight: var(--fw-medium);
+  color: var(--gray-500);
+  margin-bottom: 0;
+}
+
+.author-info .author {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-info .author .author-name {
+  font-size: var(--fs-14);
+  font-weight: var(--fw-extra-bold);
+}
